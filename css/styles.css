@@ -64,53 +64,71 @@ img {
 
   /* HEADER */
 
-/* header { 
+.banner__inicio {
+  background-image: url(../img/bannerejemplo.png);
+  background-position: center;
+  background-size:cover ;
   width: 100vw;
-  height: 100vh;
+  height: 670px;
 }
 
-.banner_top img {
+.banner__nosotros {
+  background-image: url(../img/bannernosotros.png);
+  background-position: center;
+  background-size:cover ;
   width: 100vw;
+  height: 670px;
 }
 
-.banner_fondo img {
+.banner__tienda {
+  background-image: url(../img/bannertienda.png);
+  background-position: center;
+  background-size:cover ;
   width: 100vw;
-  height: 600px;
+  height: 670px;
 }
 
-.banner_top {
-  position: absolute;
-  top: 0;
-  z-index: 1;
+.banner__catering {
+  background-image: url(../img/bannercatering.png);
+  background-position: center;
+  background-size:cover ;
+  width: 100vw;
+  height: 670px;
 }
 
-.banner_fondo {
-  position: absolute;
-  top: 70px;
+.banner__contacto {
+  background-image: url(../img/bannercontacto.png);
+  background-position: center;
+  background-size:cover ;
+  width: 100vw;
+  height: 670px;
 }
 
-.banner_logo {
-  position: absolute;
-  top: 15px;
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top__logo {
+  display: inline-block;
+  margin-left: 60px;
+  padding-top: 10px;
   left: 50px;
   width: 200px;
   height: 200px;
-  z-index: 2;
 }
 
 .buscar {
   position:relative;
-  top: 30px;
   height: 60px;
-  width: 100vw;
-  z-index: 3;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 10px 150px 10px 0;
+  padding: 0 150px 10px 0;
 }
 
-.buscar .buscar_producto {
+.buscar .buscar__producto {
   position: absolute;
   height: 30px;
   width: 250px;
@@ -122,9 +140,9 @@ img {
   outline: none;
 }
 
-.buscar .buscar_button {
+.buscar .buscar__button {
   position: absolute;
-  top: 17px;
+  top: 8px;
   right: 195px;
   width: 15px;
   border: none;
@@ -136,47 +154,46 @@ img {
   width: 30px;
   height: 30px;
   z-index: 4;
-  top: 10px;
   right: 110px;  
 }
 
-.menu {
-  position: relative;
-  z-index: 4;
-  margin-top: 90px;
-  width: 100vw;
+.banner .top .top__logo {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
 }
 
-.menu ul {
+.navbar {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 6px;
 }
 
-.menu li {
-  margin: 45px 60px 0 45px;
+.navbar .menu .menu__item {
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
-nav ul li a {
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu .menu__item .menu__link {
   color: var(--light);
   font-family: 'Arima Madurai', cursive;
-  font-weight: bold;
+  font-weight:900;
+  font-size: var(--text-xs);
 }
 
-
-} */
-
-/* MAIN */
-
-/* body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+.menu .menu__item .menu__link:hover {
+  color: var(--accent);
+  background-color: transparent;
 }
 
-main {
-  margin-bottom: 60px;
-} */
 
 /* INICIO */
 
@@ -506,167 +523,3 @@ span img {
 
 
 
-
-
-
-
-
-header {
-  background-image: url(../img/bannerejemplo.png);
-  background-size: cover;
-  background-position: center center;
-  width: 100vw;
-  height: 650px;
-}
-
-.banner {
-  position: relative;
-  z-index: 1;
-}
-
-.navbar {
-  position: absolute;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  top: 20px;
-}
-
-.navbar .navbar__logo {
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-}
-
-.navbar .menu .menu__item {
-  display: inline-block;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 90px;
-}
-
-.menu .menu__item .menu__link {
-  color: rgb(254, 31, 139);
-  font-family: 'Arima Madurai', cursive;
-  font-weight:900;
-  font-size: var(--text-xs);
-}
-
-.menu .menu__item .menu__link:hover {
-  color: var(--accent);
-  background-color: transparent;
-}
-
-.navbar .busqueda {
-  display: inline-block;
-}
-
-.navbar .cart {
-  display: inline-block;
-}
-
-/* 
-header { 
-  width: 100vw;
-  height: 100vh;
-}
-
-.banner_top img {
-  width: 100vw;
-}
-
-.banner_fondo img {
-  width: 100vw;
-  height: 600px;
-}
-
-.banner_top {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-
-.banner_fondo {
-  position: absolute;
-  top: 70px;
-}
-
-.banner_logo {
-  position: absolute;
-  top: 15px;
-  left: 50px;
-  width: 200px;
-  height: 200px;
-  z-index: 2;
-}
-
-.buscar {
-  position:relative;
-  top: 30px;
-  height: 60px;
-  width: 100vw;
-  z-index: 3;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 10px 150px 10px 0;
-}
-
-.buscar .buscar_producto {
-  position: absolute;
-  height: 30px;
-  width: 250px;
-  right: 180px;
-  background-color: var(--light);
-  opacity: .6;
-  border-radius: 100px;
-  border-color: rgba(0, 0, 0, 0);
-  outline: none;
-}
-
-.buscar .buscar_button {
-  position: absolute;
-  top: 17px;
-  right: 195px;
-  width: 15px;
-  border: none;
-  opacity: .5;
-}
-
-.cart img { 
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  z-index: 4;
-  top: 10px;
-  right: 110px;  
-}
-
-.menu {
-  position: relative;
-  z-index: 4;
-  margin-top: 90px;
-  width: 100vw;
-}
-
-.menu ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.menu li {
-  margin: 45px 60px 0 45px;
-}
-
-nav ul li a {
-  color: var(--light);
-  font-family: 'Arima Madurai', cursive;
-  font-weight: bold;
-}
-
-a:hover {
-  color: var(--accent);
-  background-color: transparent;
-} */
