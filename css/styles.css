@@ -58,6 +58,12 @@ img {
   margin: 0 auto;
 }
 
+.salto__linea img {
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
   /* HEADER */
 
 .banner__inicio {
@@ -193,13 +199,6 @@ img {
 
 /* INICIO */
 
-
-.salto__linea img {
-  height: 50px;
-  margin-top: 40px;
-  margin-bottom: 50px;
-}
-
 .inicio {
   display: flex;
   flex-direction: row;
@@ -315,34 +314,39 @@ img {
 
 /* NOSOTROS */
 
-.titu_princ h1 {
-  display: block;
+.nosotros__titulo {
   color: var(--primary);
-  font-size: var(--text-xxl);
+  font-size: var(--text-lg);
   font-family: 'Arima Madurai', cursive;
   text-align: center;
+  height: 60px;
 }
 
-.descrip_nosotros p {
-  width: 80%;
-  display: block;
-  margin: auto;
+.nosotros__descripcion {
   font-family: 'Arima Madurai', cursive;
+  font-size: var(--text-sm);
   text-align: center;
   line-height: 40px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 40px 70px;
 }
 
-.nosot_prod img {
-  width: 310px;
-  height: 310px;
+.nosotros__picture {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nosotros__picture img {
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
+  margin: 10px 70px;
 }
 
-.agrad_nosotros p {
-  display: block;
+.nosotros__agradecimiento p {
   margin: auto;
+  text-align: center;
   width: 60%;
   font-family: 'Arima Madurai', cursive;
   font-style: normal;
@@ -355,15 +359,18 @@ img {
   text-align: center;
 }
 
-.img_fija img {
-  display: block;
-  width: 100%;
-  height: 500px;
-  position: sticky;
+.picture__fija {
+  height: 480px;
+  text-align: center;
+  background-image: url(../img/nosotros4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
 /* TIENDA */
+
 
 .titu_categ {
   font-size: var(--text-sm);
@@ -377,7 +384,6 @@ img {
   color: #A3A3A3;
   text-align: left;
 }
-
 
 
 /* CATERING */
