@@ -469,7 +469,6 @@ img {
   display: block;
   margin: auto;
   width: 80%;
-  align:center;
   color: var(--primary);
   font-size: var(--text-lg);
   font-family: 'Arima Madurai', cursive;
