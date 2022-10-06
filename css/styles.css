@@ -12,38 +12,29 @@
   --secondary: #ffddec;
   --light: #fdfdfd;
   --accent: #ff00aa;
+  --basic: #000000;
 
   /* Font Sizes */
 
   --text-xxl: 4.8em;
   --text-xl: 3.6em;
   --text-lg: 3em;
-  --text-md: 2em;
-  --text-sm: 1.6em;
+  --text-md: 2.2em;
+  --text-sm: 1.7em;
   --text-xs: 1.2em;
   --text-xxs: 1em;
-
-  /* Spacings */
-
-  --sp-xxl: 12rem;
-  --sp-xl: 8rem;
-  --sp-lg: 5rem;
-  --sp-md: 3.2rem;
-  --sp-sm: 1.6rem;
-  --sp-xs: 0.8rem;
 }
 
 /* NORMALIZE */
 
 * {
-    padding: 0; 
-    margin: 0; 
-    box-sizing: border-box;
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Nunito', sans-serif;
-  font-size: var(--text-md);
 }
 
 html {
@@ -62,13 +53,18 @@ img {
   width: 100%;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
   /* HEADER */
 
 .banner__inicio {
   background-image: url(../img/bannerejemplo.png);
   background-position: center;
   background-size:cover ;
-  width: 100vw;
+  width: 100%;
   height: 670px;
 }
 
@@ -76,7 +72,7 @@ img {
   background-image: url(../img/bannernosotros.png);
   background-position: center;
   background-size:cover ;
-  width: 100vw;
+  width: 100%;
   height: 670px;
 }
 
@@ -84,7 +80,7 @@ img {
   background-image: url(../img/bannertienda.png);
   background-position: center;
   background-size:cover ;
-  width: 100vw;
+  width: 100%;
   height: 670px;
 }
 
@@ -92,7 +88,7 @@ img {
   background-image: url(../img/bannercatering.png);
   background-position: center;
   background-size:cover ;
-  width: 100vw;
+  width: 100%;
   height: 670px;
 }
 
@@ -100,7 +96,7 @@ img {
   background-image: url(../img/bannercontacto.png);
   background-position: center;
   background-size:cover ;
-  width: 100vw;
+  width: 100%;
   height: 670px;
 }
 
@@ -186,7 +182,7 @@ img {
   color: var(--light);
   font-family: 'Arima Madurai', cursive;
   font-weight:900;
-  font-size: var(--text-xs);
+  font-size: var(--text-md);
 }
 
 .menu .menu__item .menu__link:hover {
@@ -197,49 +193,123 @@ img {
 
 /* INICIO */
 
-.salto_linea img {
+
+.salto__linea img {
   height: 50px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
-.parrafo_inicio p {
+.inicio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 380px;
+}
+
+.inicio__descripcion p {
   font-family: 'Arima Madurai', cursive;
   font-size: var(--text-lg);
   line-height: 60px;
   text-align: center;
+  width: 620px;
 }
 
-.img_inicio img {
+.inicio .pictures {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.pictures .pictures__torta1 {
+  position: absolute;
+  z-index: 1;
+  right: 45%;
+}
+
+.pictures .pictures__torta2 {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  right: 5%;
+}
+
+.pictures img {
   width: 290px;
   height: 290px;
   border-radius: 50%;
 }
 
-.galeria_inicio img {
-  width: 290px;
-  height: 290px;
-  border-radius: 17%;
+.producto .producto__picture img {
+  width: 280px;
+  height: 350px;
+  border-radius: 15%;
 }
 
-.enlace_tienda {
-  width: 250px;
-  height: 28px;
-  background-color: rgb(254, 70, 171);
-  border-radius: 20px;
+.tienda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-.enlace_tienda a {
+.tienda .tienda__galeria {
+  display: flex;
+  flex-direction: row;
+}
+
+.producto {
+  position: relative;
+  padding: 20px;
+}
+
+.producto .producto__descripcion__arg a {
+  position: absolute;
+  bottom: 13%;
+  width: 280px;
   color: var(--light);
   font-size: var(--text-sm);
   font-family: 'Arima Madurai', cursive;
   text-align: center;
 }
 
+.producto .producto__descripcion__vzla a {
+  position: absolute;
+  bottom: 13%;
+  width: 280px;
+  color: var(--basic);
+  font-size: var(--text-sm);
+  font-family: 'Arima Madurai', cursive;
+  text-align: center;
+}
+
+.tienda__enlace {
+  display: grid;
+  align-items: center;
+  width: 280px;
+  height: 36px;
+  background-color: var(--accent);
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.tienda__enlace a {
+  color: var(--light);
+  font-size: var(--text-sm);
+  text-align: center;
+  width: 100%;
+}
+
+.bandera {
+  margin: 10px;
+}
+
 .bandera img {
-  vertical-align: middle;
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  opacity: .9;
+  opacity: .8;
 }
 
 
@@ -287,7 +357,7 @@ img {
 
 .img_fija img {
   display: block;
-  width: 100vw;
+  width: 100%;
   height: 500px;
   position: sticky;
 }
@@ -421,74 +491,85 @@ img {
 /* FOOTER */
 
 footer {
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
+  width: 100%;
   height: 250px;
+  margin-top: 4%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.pie_pagina {
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
+.pie {
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: flex-end;
-  background-color:#A3A3A3;
-  /* background-image: url(../img/piefondo.svg); */
-  background-repeat: no-repeat;
+  background-image: url(../img/piefondo.svg);
+  background-position: center;
+  background-size: cover;
 }
 
-.titulo_pie {
-  position: relative;
+.pie .pie__titulo h2 {
   text-align: center;
-  font-size: var(--text-xs);
+  font-size: var(--text-md);
   color: var(--accent);
   margin-top: 10px;
   margin-bottom: 5px;
 }
   
-.redes_sociales{
-  position: relative;
-  width: 100vw;
+.pie .pie__redes {
+  width: 100%;
   height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 80px;
+  margin-bottom: 3px;
 }
 
-.redes {
+.pie .pie__contacto {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 80px;
+  margin-bottom: 3px;
+}
+
+.pie .redes {
   height: 140px;
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin-left: 180px;
-  margin-right: 180px;
+  margin-left: 70px;
+  margin-right: 70px;
   margin-top: 20px;
 }
 
-.logo_redes img {
+.redes .redes__logo {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+}
+
+.redes .redes__logo img {
   height: 40px;
 }
 
 .sucursales {
   height: 140px;
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content:space-evenly;
   align-content: flex-start;
+  margin-bottom: 20px;
 }
 
 .sucursales h4 {
-  padding: 8px 0 8px 0;
+  padding: 5px 0 5px 0;
   text-align:center;
   font-size: var(--text-xxs);
   text-align:left;
@@ -509,8 +590,8 @@ span img {
 }
 
 .copyright {
-  height: 40px;
-  background-color: black;
+  height: 50px;
+  background-color: var(--basic);
 }
 
 .text_copyright {
@@ -522,4 +603,28 @@ span img {
 
 
 
+/* MEDIAS */
 
+@media screen and (max-width: 968px) {
+
+  
+.navbar .menu {
+  /* justify-content: center; */
+  display: none;
+}
+.hamburger {
+  display: block;
+}
+
+  .tienda .tienda__galeria {
+    flex-direction: column;
+    align-items: center;
+ }
+ /* .historia__article:first-of-type {
+     width: 100%;
+     border-right: none;
+     border-bottom: 1px solid var(--light);
+     padding-bottom: var(--sp-sm);
+ } */
+
+}
