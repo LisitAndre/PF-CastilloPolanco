@@ -20,7 +20,7 @@
                 </div>
                 <div class="buscar">
                     <form action="/action_page.php">
-                        <input class="buscar__producto"  type="search" id="buscador" name="buscador" placeholder="Buscar">
+                        <input class="buscar__producto" placeholder="Buscar">
                         <input class="buscar__button" name="boton1" type="image" alt="submit" src="../img/lupa.svg">
                     </form>
                     <a class="cart" href="./tienda.html">
@@ -52,28 +52,33 @@
 
     <main>
         <section>
-            <div class="titu_princ">
-                <h1>Productos</h1>
-            </div>
-            <div>
-                <form action="" method="post">
-                    <ul>
-                        <li>
-                            <input class="buscar_producto"  type="search" id="buscador" name="buscador" placeholder="Buscar Productos">
-                        </li>
-                        <li>
-                            <input class="buscar_producto"  type="search" id="buscador" name="buscador" placeholder="Ordenar productos por">
-                        </li>
-                    </ul>
-                </form>
+            <div class="titulo__tienda">
+                <h1>Nuestros Productos</h1>
             </div>
         </section>
-        <section>
-            <div>
-                <div class="titu_categ">
+        <section class="container">
+            <div class="search">
+                <div class="search__form">
+                    <form action="" method="">
+                        <input class="search__producto" placeholder="Buscar Productos">
+                        <input class="search__button" name="boton1" type="image" alt="submit" src="../img/lupa.svg">
+                    </form>
+                </div>
+                <div >
+                <div class="search__form">
+                    <form action="" method="">
+                        <input class="search__producto" placeholder="Ordenar productos por">
+                        <input class="search__button" name="boton1" type="image" alt="submit" src="../img/flecha.svg">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="container__shop">
+            <div class="categoria">
+                <div class="categoria__titulo">
                     <h3>Categorías</h3>
                 </div>
-                <div class="link_categoria">
+                <div class="categoria__link">
                     <ul>
                         <li><a href="">Desayunos</a></li>
                         <li><a href="">Meriendas</a></li>
@@ -83,63 +88,210 @@
                         <li><a href="">Cupcakes</a></li>
                     </ul> 
                 </div>
-                <div class="titu_categ">
+                <div class="categoria__titulo">
                     <h3>Tamaños</h3>
                 </div>
-                <div class="link_categoria">
+                <div class="categoria__link">
                     <ul>
-                        <li><a href="../index.html">Individual</a></li>
-                        <li><a href="./nosotros.html">Completas</a></li>
+                        <li><a href="">Individual</a></li>
+                        <li><a href="">Completas</a></li>
                     </ul> 
                 </div>
             </div>
-            <div>
-                <div class="galeria_inicio">
-                    <div>
-                        <img src="../img/producto5.jpg" alt="torta/postre">
-                    </div>
-                    <div>
-                        <img src="../img/producto10.jpg" alt="torta/postre">
-                    </div>
-                    <div>
-                        <img src="../img/producto11.jpg" alt="torta/postre">
-                    </div>
-                    <div>
-                        <img src="../img/producto14.jpg" alt="torta/postre">
+            <div class="galeria__shop">
+                <div class="shop">
+                    <div class="shop__galeria">
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto9.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Cupcake de Naranja</h5> 
+                                    <h5>$200</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto10.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Tarta de Fresa</h5> 
+                                    <h5>$700</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto11.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Cheescake de Fresa</h5> 
+                                    <h5>$700</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto5.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Red Velvet (completa)</h5> 
+                                    <h5>$2.500</h5>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="galeria_inicio">
-                    <div>
-                        <img src="../img/producto9.jpg" alt="torta/postre">
-                    </div>
-                    <div>
-                        <img src="../img/producto8.jpg" alt="torta/postre">
-                    </div>
-                    <div>
-                        <img src="../img/producto17.jpg" alt="torta/postre">
-                    </div>
-                    <div>
-                        <img src="../img/producto7.jpg" alt="torta/postre">
+                <div class="shop">
+                    <div class="shop__galeria">
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto12.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Pie de Limón</h5> 
+                                    <h5>$500</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto13.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Pastel de Arándanos</h5> 
+                                    <h5>$650</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto14.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Cupcake de Arándanos</h5> 
+                                    <h5>$300</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto6.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Cupcakes (variados)</h5> 
+                                    <h5>$150</h5>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="galeria_inicio">
-                    <div>
-                        <img src="../img/producto4.jpg" alt="torta/postre">
-                    </div>
-                    <div>
-                        <img src="../img/producto6.jpg" alt="torta/postre">
-                    </div>
-                    <div>
-                        <img src="../img/producto1.jpg" alt="torta/postre">
-                    </div>
-                    <div>
-                        <img src="../img/producto12.jpg" alt="torta/postre">
+                <div class="shop">
+                    <div class="shop__galeria">
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto15.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Dulce de Leche Tentación</h5> 
+                                    <h5>$1.800</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto16.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Cupcakes de Dulce de Leche</h5> 
+                                    <h5>$160</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto17.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Pastel de Boda Choco</h5> 
+                                    <h5>$2.600</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto7.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Suspiros (x10)</h5> 
+                                    <h5>$400</h5>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="enlace_tienda">
-                    <a href="">MOSTRAR MÁS PRODUCTOS</a>
+                <div class="shop">
+                    <div class="shop__galeria">
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto18.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Pastel de Boda Red</h5> 
+                                    <h5>$2.800</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto19.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Pastel de Frutas</h5> 
+                                    <h5>$1.700</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto20.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Fiesta de Fresas</h5> 
+                                    <h5>$1.900</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop__producto">
+                            <div class="shop__picture">
+                                <img src="../img/producto8.jpg" alt="torta/postre">
+                            </div>
+                            <div class="shop__descripcion">
+                                <a href="./tienda.html"> 
+                                    <h5>Torta de Choco</h5> 
+                                    <h5>$2.000</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>  
+            </div>
         </section>
     </main>
 
@@ -153,8 +305,8 @@
                     <a class="redes__logo" href=""> <img src="../img/logoface.svg" alt="logo facebook"> </a>
                     <a class="redes__logo" href=""> <img src="../img/logoinsta.svg" alt="logo instagram"> </a>
                     <a class="redes__logo" href=""> <img src="../img/logotiktok.svg" alt="logo tiktok"> </a>
-                    <a class="redes__logo" href=""> <img src="../img/twitter.svg" alt="logo twitter"> </a>
-                    <a class="redes__logo" href=""> <img src="../img/youtube.svg" alt="logo youtube"> </a>
+                    <a class="redes__logo" href=""> <img src="../img/logotwitter.svg" alt="logo twitter"> </a>
+                    <a class="redes__logo" href=""> <img src="../img/logoyoutube.svg" alt="logo youtube"> </a>
                 </div>
             </div>
             <div class="pie__contacto">
