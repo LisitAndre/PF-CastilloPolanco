@@ -51,60 +51,69 @@
     </header>
 
     <main>
-        <section>
+        <section class="container">
             <div>
-                <div class="salto_linea">
+                <div class="salto__linea">
                     <img src="../img/saltodelinea.svg" alt="decoración">
                 </div>
-                <div class="titu_princ">
+                <div class="titulo__catering">
                     <h1>Catering Social</h1>
                 </div>
             </div>
-            <article>
-                <div class="catering_desc">
-                    <p>En Tres Dulces Niñas contamos con un servicio de catering social con el fin de estar presente en todos tus eventos, con nuestras más deliciosas propuestas pensadas para cada ocasión. </p>
-                </div>
-                <div class="catering_desc">
+            <section class="catering">
+                <div class="catering__descripcion">
+                    <p>Contamos con un servicio de catering que nos permite estar presente en todos tus eventos, con nuestras más deliciosas propuestas pensadas para cada ocasión. </p>
                     <ul>
                         <li>Cumpleaños</li>
-                        <li>Bautismo</li>
-                        <li>Comuniones</li>
+                        <li>Bautismos</li>
                         <li>Matrimonios</li>
                         <li>15 Años</li>
                         <li>Graduaciones</li>
                     </ul>
+                    <p>Tenemos personal capacitado para aclarar todas tus dudas y brindarte el mejor asesoramiento, asi que no dudes en contactarnos.</p>
                 </div>
-                <div class="catering_desc">
-                    <p>Contamos con un personal capacitado para aclarar todas tus dudas y brindarte el mejor asesoramiento, asi que no dudes en consultarnos.</p>
+                <div class="catering__picture">
+                    <figure class="catering__img">
+                        <img src="../img/catering-1.png" alt="">
+                    </figure>
+                    <figure class="catering__img">
+                        <img src="../img/catering-2.png" alt="">
+                    </figure>
+                    <figure class="catering__img">
+                        <img src="../img/catering-3.png" alt="">
+                    </figure>
+                    <figure class="catering__img">
+                        <img src="../img/catering-4.png" alt="">
+                    </figure>
+                    <figure class="catering__img">
+                        <img src="../img/catering-5.png" alt="">
+                    </figure>
                 </div>
-                <div class="catering_img">
-                    <img src="../img/catering.jpg" alt="">
-                </div>
-            </article>
-                <div class="salto_linea">
-                    <img src="../img/saltodelinea.svg" alt="decoración">
-                </div>
+            </section>
+            <div class="salto__linea">
+                <img src="../img/saltodelinea.svg" alt="decoración">
+            </div>
         </section>
 
-        <section>
+        <section class="container">
             <div>
-                <div class="titulo_form">
+                <div class="titulo__catering">
                     <h2>Cotización</h2>
                 </div>
-                <div class="catering_desc">
-                    <p>Puedes solicitar tu presupuesto completando el siguiente formulario. Nuestro equipo se pondrá en contacto contigo a la brevedad posible. Trabajamos con pedidos mínimos para 10 personas y un máximo de 60. Recuerda realizar tu consulta/pedido con 72hrs de anticipación.</p>
+                <div class="catering__contacto">
+                    <p>Puedes solicitar tu presupuesto completando el siguiente formulario. Nuestro equipo se pondrá en contacto contigo a la brevedad posible. Trabajamos con pedidos mínimos para 10 personas y un máximo de 60 personas. Recuerda realizar tu pedido con 72hrs de anticipación.</p>
                 </div>
             </div>
             <div>
-                <div class="titulo_form">
+                <div class="formulario__titulo">
                     <h3>Datos del Evento</h3>
                 </div>
-                <div class="form_text">
+                <div class="formulario__content">
                     <form action="" method="post">
                         <ul>
                             <li>
-                                <label for="name">Motivo:</label>
-                                <select name="motivo" id="motivo">
+                                <label class="formulario__items" for="name">Motivo:</label>
+                                <select class="formulario__text" name="motivo" id="motivo">
                                     <option value="none"></option>
                                     <option value="cumpleaño">Cumpleaño</option>
                                     <option value="bautizo">Bautizo</option>
@@ -115,55 +124,81 @@
                                 </select>
                             </li>
                             <li>
-                                <label for="name">Horario:</label>
-                                <select name="horario" id="horario">
+                                <label class="formulario__items" for="horario">Horario:</label>
+                                <select class="formulario__text" name="horario" id="horario">
                                     <option value="none"></option>
                                     <option value="mañana">Mañana</option>
                                     <option value="tarde">Tarde</option>
                                     <option value="noche">Noche</option>
                                 </select>
                             </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="formulario__content">
+                    <form action="" method="post">
+                         <ul>
                             <li>
-                                <label for="name">Fecha:</label>
-                                <input type="date" name="fecha" min="2022-01-01" max="2023-12-31" />
+                                <label class="formulario__items" for="name">Fecha:</label>
+                                <input class="formulario__text" type="date" name="fecha" min="2022-01-01" max="2023-12-31" />
                             </li>
                             <li>
-                                <label for="name">Cantidad de Personas:</label>
-                                <select name=cantidad" id="cantidad">
+                                <label class="formulario__items" for="name">Cantidad de Personas:</label>
+                                <select class="formulario__text" name=cantidad" id="cantidad">
                                     <option value="none"></option>
                                     <option value="10">10</option>
                                     <option value="15">15</option>
                                     <option value="20">20</option>
                                     <option value="25">25</option>
                                     <option value="30">30</option>
+                                    <option value="20">35</option>
+                                    <option value="25">40</option>
+                                    <option value="30">45</option>
+                                    <option value="20">50</option>
+                                    <option value="25">55</option>
+                                    <option value="30">60</option>
                                 </select>
                             </li>
                         </ul>
                     </form>
                 </div>
-                <div class="titulo_form">
+                <div class="formulario__titulo">
                     <h3>Datos de Contacto</h3>
                 </div>
-                <div class="form_text">
-                    <form action="" method="post">
-                        <ul>
-                            <li>
-                                <label for="name">Nombre:</label>
-                                <input type="text" id="name" name="user_name" />
-                            </li>
-                            <li>
-                                <label for="mail">Email:</label>
-                                <input type="email" id="mail" name="user_email" />
-                            </li>
-                            <li>
-                                <label for="msg">Comentario:</label>
-                                <textarea id="msg" name="user_message"></textarea>
-                            </li>
-                        </ul>
-                    </form>
-                </div>          
-                <div class="button_enviar">
-                    <button type="button">Enviar</button>
+                <div class="formulario__contacto">
+                    <div>
+                        <form action="" method="post">
+                            <ul>
+                                <li>
+                                    <label class="formulario__items" for="name">Nombre:</label>
+                                    <input class="formulario__text" id="name" name="user_name" />
+                                </li>
+                                <li>
+                                    <label class="formulario__items" for="mail">Email:</label>
+                                    <input class="formulario__text" type="email" id="mail" name="user_email" />
+                                </li>
+                                <li>
+                                    <label class="formulario__items" for="phone">Teléfono/Whatsapp:</label>
+                                    <input class="formulario__text" type="text" id="name" name="user_name" />
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+
+                    <div>
+                        <form action="" method="post">
+                            <ul>
+                                <li>
+                                    <label class="formulario__items" for="msg">Comentario:</label>
+                                    <textarea class="formulario__coment" name="comentario" placeholder="Escribe aqui tu comentario" maxlength="360" name="comentarios"></textarea>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>  
+                </div>
+
+                <div class="button">
+                    <input class="button_enviar" type="submit" value="Enviar" />
                 </div>
             </div>
         </section>
