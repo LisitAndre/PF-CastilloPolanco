@@ -654,8 +654,7 @@ textarea {
   height: 34px;
   width: 320px;
   right: 180px;
-  opacity: .6;
-  border:2px solid rgba(0, 0, 0, 0.185);
+  border:1.8px solid var(--secondary);
   border-radius: 18px;
   outline: none;
   margin-bottom: 25px;
@@ -668,7 +667,7 @@ textarea {
   width: 440px;
   right: 180px;
   opacity: .6;
-  border:2px solid rgba(0, 0, 0, 0.185);
+  border:1.8px solid var(--secondary);
   border-radius: 18px;
   outline: none;
   margin-bottom: 25px;
@@ -705,76 +704,135 @@ textarea {
 
 /* CONTACTO */
 
-.form_text li {
-  margin: auto;
-  display: block;
-  width: 80%;
-  font-size: var(--text-sm);
-  text-align: left;
-  line-height: 40px;
-  font-weight: 900;
+.container__contacto {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
 }
 
-.form_text li select {
-  font-size: var(--text-xs);
-  text-align: left;
-  line-height: 40px;
-  font-weight: 900;
-  border-radius: 8px;
+.contacto__sucursales1 {
+  width: 500px;
 }
 
-.form_text li input {
-  height: 23px;
-  font-size: var(--text-xs);
-  text-align: left;
-  font-weight: 500;
-  border-radius: 8px;
+.contacto__sucursales2 {
+  width: 600px;
 }
 
-.form_text li textarea {
-  font-size: var(--text-xs);
-  text-align: left;
-  font-weight: 500;
-  border-radius: 8px;
-}
-
-.button_enviar button {
-  display: block;
-  width: 80%;
-  margin: auto;
-  width: 100px;
-  height: 28px;
+hr {
+  height: 0.5px;
   background-color: var(--accent);
-  border-radius: 20px;
-  text-decoration: none;
-  color: var(--light);
-  font-size: var(--text-sm);
-  font-weight: 900;
-  text-align: center;
+  width: 310px;
+  margin-left: 10px;
   border: none;
 }
 
-.sucurs h2 {
-  display: block;
-  margin: auto;
-  width: 80%;
+.contacto__titulo {
+  height: 60px;
   color: var(--primary);
-  font-size: var(--text-lg);
   font-family: 'Arima Madurai', cursive;
   text-align: center;
-  text-align: left;
-  font-weight: 900;
+  font-size: var(--text-md);
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
-.sucursal_contact {
-  display: block;
-  margin: auto;
-  width: 80%;
+.formulario__contactanos {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.formulario__contactanos2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 570px;
+}
+
+.formulario__contactanos2 li {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario__items {
+  font-family: 'Nunito', sans-serif;
   font-size: var(--text-xs);
-  text-align: left;
-  font-weight: 500;
 }
 
+.formulario__comentario {
+  height: 200px;
+  width: 570px;
+  opacity: .9;
+  border:1.7px solid var(--secondary);
+  border-radius: 18px;
+  outline: none;
+  margin-bottom: 25px;
+  padding: 8px 8px;
+}
+
+.formulario__input {
+  height: 36px;
+  width: 250px;
+  opacity: 0.6;
+  border:1.7px solid var(--secondary);
+  border-radius: 18px;
+  outline: none;
+  margin-bottom: 50px;
+  padding: 0 8px;
+} 
+
+.button__contact {
+  text-align: center;
+  padding-bottom: 80px;
+  margin-top: 30px;
+}
+
+.sucursales__contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:flex-start;
+  width: 80%;
+  margin: 40px 0;
+}
+
+.sucursales__contacto .sucursales__items {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+.sucursales__contacto .sucursales__items .sucursales__logo {
+  width: 34px;
+  margin-right: 20px;
+  opacity: .4;
+  display: grid;
+  align-items: center;
+}
+
+.sucursales__contacto .sucursales__items .sucursales__tittle {
+  font-family: 'Arima Madurai', cursive;
+  color: var(--accent);
+  font-size: var(--text-xs);
+  line-height: 20px;
+  margin: auto 0;
+}
+
+.sucursales__contacto .sucursales__items .sucursales__text {
+  font-size: var(--text-xs);
+  line-height: 20px;
+  margin: auto 0;
+}
 
 /* FOOTER */
 
