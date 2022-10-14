@@ -987,6 +987,21 @@ span img {
   top: 30%;
 }
 
+.nosotros__titulo h1 {
+  font-size: var(--text-xl);
+  height: 100%;
+}
+
+.nosotros__descripcion {
+  margin: 20px;
+}
+
+.nosotros__agradecimiento p {
+  font-size: var(--text-md);
+  line-height: 50px;
+  width: 80%;
+}
+
 .pie .pie__contacto {
   height: 100%;
   margin-top: 10px;
