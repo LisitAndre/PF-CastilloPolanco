@@ -27,7 +27,6 @@
   /* Spacings */
 
   --sp-sm:1rem;
-
 }
 
 
@@ -89,7 +88,6 @@ textarea {
 
 .navbar {
   display: none;
-  color: var(--basic);
 }
 
 .banner__inicio {
@@ -323,8 +321,6 @@ textarea {
   border-radius: 20px;
   margin: 30px;
 }
-
-
 
 .tienda__enlace a {
   color: var(--light);
@@ -963,9 +959,13 @@ span img {
 
 @media screen and (max-width: 576px) { 
 
+.top {
+  flex-direction: column;
+}
+
 .pictures img {
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
@@ -973,6 +973,36 @@ span img {
   position: relative;
   width: 100%;
   height: 320px;
+}
+
+.pictures .pictures__torta1 {
+  position: absolute;
+  z-index: 1;
+  left: 4%;
+}
+
+.pictures .pictures__torta2 {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+}
+
+.pie .pie__contacto {
+  height: 100%;
+  margin-top: 10px;
+}
+
+.sucursales {
+  height: 100%;
+  flex-direction: column;
+}
+
+.sucursales h4 {
+  text-align:center;
+}
+
+.sucursales h3 {
+  text-align:center;
 }
 
 }
@@ -1015,7 +1045,19 @@ span img {
 
 .navbar {
   display: block;
-  margin: 0 20px;
+  margin: 20px;
+}
+
+.pictures .pictures__torta1 {
+  position: absolute;
+  z-index: 1;
+  left: 4%;
+}
+
+.pictures .pictures__torta2 {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
 }
 
 .pie {
