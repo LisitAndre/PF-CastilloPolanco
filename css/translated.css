@@ -807,7 +807,8 @@ footer {
       border-radius: 18px;
       outline: none;
       margin-bottom: 25px;
-      padding: 0 8px; }
+      padding: 0 8px;
+      background-color: white; }
     .formulario__contacto li .formulario__coment {
       font-family: 'Nunito', sans-serif;
       height: 60px;
@@ -869,8 +870,7 @@ footer {
   .formulario__content {
     height: 200px; }
     .formulario__content ul {
-      flex-direction: column;
-      width: 100%; }
+      flex-direction: column; }
   .formulario__contacto {
     width: 100%;
     height: 100%;
@@ -889,7 +889,18 @@ footer {
     align-items: center;
     padding: 0 20px; }
     .catering .catering__picture {
-      height: 100%; } }
+      height: 100%; }
+  .formulario__content {
+    width: 100%; }
+    .formulario__content form {
+      width: 100%; }
+    .formulario__content ul {
+      padding: 0;
+      width: 100%; }
+  .formulario__contacto {
+    width: 100%; }
+    .formulario__contacto li .formulario__coment {
+      width: 360px; } }
 
 /* CONTACTO */
 .container__contacto {
@@ -1016,7 +1027,11 @@ hr {
 @media screen and (max-width: 576px) {
   .container__shop {
     max-width: 1200px;
-    margin: 0 20px; } }
+    margin: 0 20px; }
+  .container__contacto .contacto__sucursales1 .sucursales__contacto .sucursales__items .sucursales__logo {
+    width: 24px; }
+  .container__contacto .contacto__sucursales2 .formulario__contactanos .formulario__contactanos2 li .formulario__input {
+    margin-bottom: 30px; } }
 
 @media screen and (max-width: 768px) {
   .contacto__sucursales1 .sucursales__column {

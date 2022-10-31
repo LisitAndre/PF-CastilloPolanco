@@ -166,6 +166,30 @@ margin: 20px;
   max-width: 1200px;
   margin: 0 20px;
   }
+
+  .container__contacto {
+    .contacto__sucursales1 {
+      .sucursales__contacto {
+        .sucursales__items {
+          .sucursales__logo {
+          width: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .container__contacto {  
+    .contacto__sucursales2 { 
+      .formulario__contactanos { 
+        .formulario__contactanos2 li { 
+          .formulario__input { 
+          margin-bottom: 30px;
+          }
+        }
+      }  
+    } 
+  }  
 }
 
 @media screen and (max-width: 768px) { 

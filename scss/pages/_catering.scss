@@ -164,6 +164,7 @@ margin: 0 auto;
     outline: none;
     margin-bottom: 25px;
     padding: 0 8px;
+    background-color: white;
     }
  
     .formulario__coment {
@@ -257,7 +258,6 @@ margin-bottom: 100px;
     
     ul {
     flex-direction: column;
-    width: 100%;
     }
   }
 
@@ -296,6 +296,30 @@ margin-bottom: 100px;
 
     .catering__picture{
     height: 100%;
+    }
+  }
+
+  .formulario__content {
+  width: 100%;
+
+    form {
+    width: 100%;
+    }
+    
+    ul {
+    padding: 0;
+    width: 100%;
+    }
+  }
+
+  .formulario__contacto {
+  width: 100%;
+
+    li { 
+
+      .formulario__coment {
+      width: 360px;
+      }
     }
   }
 }
