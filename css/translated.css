@@ -1,0 +1,1062 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;800;900&family=Nunito:wght@400;500;600&display=swap");
+/* MISC */
+/* VARIABLES */
+/* Palette */
+/* Font Sizes */
+/* Spacings */
+/* NORMALIZE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+.container {
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+::placeholder {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+  text-align: left; }
+
+img {
+  width: 100%; }
+
+option {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em; }
+
+.salto__linea img {
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+textarea {
+  resize: none; }
+
+/* PARTIALS */
+/* HEADER */
+.navbar {
+  display: none; }
+
+.banner__inicio {
+  background-image: url(../img/bannerejemplo.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 670px; }
+
+.banner__nosotros {
+  background-image: url(../img/bannernosotros.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 670px; }
+
+.banner__tienda {
+  background-image: url(../img/bannertienda.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 670px; }
+
+.banner__catering {
+  background-image: url(../img/bannercatering.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 670px; }
+
+.banner__contacto {
+  background-image: url(../img/bannercontacto.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 670px; }
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .top .top__logo {
+    display: inline-block;
+    margin: 0 30px;
+    padding-top: 10px;
+    left: 50px;
+    width: 200px;
+    height: 200px; }
+
+.buscar {
+  position: relative;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 150px 10px 0; }
+  .buscar .buscar__producto {
+    position: absolute;
+    height: 30px;
+    width: 250px;
+    right: 180px;
+    background-color: #fdfdfd;
+    opacity: .6;
+    border-radius: 100px;
+    border-color: rgba(0, 0, 0, 0);
+    outline: none;
+    padding: 0 10px;
+    font-size: 1.2em; }
+  .buscar .buscar__button {
+    position: absolute;
+    top: 8px;
+    right: 195px;
+    width: 15px;
+    border: none;
+    opacity: .5; }
+  .buscar .buscar__cart {
+    position: absolute;
+    z-index: 4;
+    right: 110px; }
+    .buscar .buscar__cart img {
+      width: 30px;
+      height: 30px; }
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 15px 0; }
+  .menu .menu__item {
+    display: flex;
+    align-items: center; }
+    .menu .menu__item .menu__link {
+      color: #fdfdfd;
+      font-family: 'Arima Madurai', cursive;
+      font-weight: 900;
+      font-size: 2.2em; }
+      .menu .menu__item .menu__link:hover {
+        color: #ff00aa;
+        background-color: transparent; }
+
+/* MEDIAS */
+@media screen and (max-width: 576px) {
+  .top {
+    flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none; }
+  .buscar {
+    display: none; }
+  .navbar {
+    display: block;
+    margin: 20px; }
+  .navbar-toggler {
+    width: 50px;
+    height: 50px;
+    background-color: #ffddec;
+    border: 2px solid #ff7ebc; }
+  .navbar-toggler-icon {
+    width: 2.5em; }
+  .offcanvas {
+    background-color: #ffddec;
+    font-size: 1.2em;
+    max-width: 300px; }
+  .form-control {
+    max-width: 200px; }
+  .d-flex {
+    margin-top: 20px; } }
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 100%;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.pie {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-image: url(../img/piefondo.svg);
+  background-position: center;
+  background-size: cover; }
+  .pie .pie__redes {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10px; }
+    .pie .pie__redes .pie__titulo {
+      margin-top: 10px;
+      margin-bottom: 5px; }
+      .pie .pie__redes .pie__titulo h2 {
+        text-align: center;
+        font-size: 2.2em;
+        color: #ff00aa; }
+    .pie .pie__redes .pie__logos {
+      height: 140px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin-left: 70px;
+      margin-right: 70px;
+      margin-top: 20px; }
+      .pie .pie__redes .pie__logos .redes__logo {
+        display: flex;
+        justify-content: space-around;
+        padding: 8px; }
+        .pie .pie__redes .pie__logos .redes__logo img {
+          height: 40px; }
+  .pie .pie__contacto {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10px; }
+    .pie .pie__contacto .pie__titulo {
+      margin-top: 10px;
+      margin-bottom: 5px; }
+      .pie .pie__contacto .pie__titulo h2 {
+        text-align: center;
+        font-size: 2.2em;
+        color: #ff00aa; }
+    .pie .pie__contacto .sucursales {
+      height: 140px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-content: flex-start; }
+      .pie .pie__contacto .sucursales h4 {
+        padding: 5px 0 5px 0;
+        text-align: center;
+        font-size: 1em;
+        text-align: left; }
+      .pie .pie__contacto .sucursales h3 {
+        padding: 8px 0 8px 0;
+        text-align: center;
+        font-size: 1.2em;
+        text-align: left;
+        font-weight: bolder; }
+      .pie .pie__contacto .sucursales span img {
+        vertical-align: middle;
+        height: 20px;
+        width: 30px; }
+
+.copyright {
+  background-color: #000000; }
+  .copyright .text_copyright {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #fdfdfd;
+    font-size: 1em;
+    margin: auto; }
+
+/* MEDIAS */
+@media screen and (max-width: 576px) {
+  .pie .pie__contacto {
+    height: 100%;
+    margin-top: 10px; }
+    .pie .pie__contacto .sucursales {
+      height: 100%;
+      flex-direction: column; }
+      .pie .pie__contacto .sucursales h4 {
+        text-align: center; }
+      .pie .pie__contacto .sucursales h3 {
+        text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .pie {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url(../img/piefondo.svg);
+    background-position: center;
+    background-size: cover; }
+    .pie .pie__redes {
+      width: 100%;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 15px auto; } }
+
+/* PAGES */
+/* INICIO */
+.inicio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 380px; }
+  .inicio .inicio__descripcion {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 3em;
+    line-height: 60px;
+    text-align: center;
+    margin: 40px 20px;
+    width: 50%; }
+  .inicio .pictures {
+    position: relative;
+    width: 600px;
+    height: 400px; }
+    .inicio .pictures .pictures__torta1 {
+      position: absolute;
+      z-index: 1;
+      right: 45%; }
+    .inicio .pictures .pictures__torta2 {
+      position: absolute;
+      z-index: 2;
+      top: 30%;
+      right: 5%; }
+    .inicio .pictures img {
+      width: 290px;
+      height: 290px;
+      border-radius: 50%; }
+
+.tienda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0; }
+  .tienda .tienda__galeria {
+    display: flex;
+    flex-direction: row; }
+
+.producto {
+  position: relative;
+  padding: 20px;
+  width: auto; }
+  .producto:hover {
+    transform: scale(1.1); }
+  .producto .producto__picture img {
+    width: 260px;
+    height: 330px;
+    border-radius: 15%; }
+  .producto .producto__descripcion__arg a {
+    position: absolute;
+    bottom: 13%;
+    width: 260px;
+    color: #fdfdfd;
+    font-size: 1.7em;
+    font-family: 'Arima Madurai', cursive;
+    text-align: center; }
+  .producto .producto__descripcion__vzla a {
+    position: absolute;
+    bottom: 13%;
+    width: 260px;
+    color: #000000;
+    font-size: 1.7em;
+    font-family: 'Arima Madurai', cursive;
+    text-align: center; }
+
+.tienda__enlace {
+  display: grid;
+  align-items: center;
+  width: 290px;
+  height: 40px;
+  background: linear-gradient(0.9turn, #fbcbe6, #ff7ebc, #fd2ea3);
+  border-radius: 20px;
+  margin: 30px; }
+  .tienda__enlace a {
+    color: #fdfdfd;
+    font-size: 1.7em;
+    text-align: center;
+    width: 100%; }
+  .tienda__enlace .bandera {
+    margin: 10px; }
+    .tienda__enlace .bandera img {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%; }
+
+/* MEDIAS */
+@media screen and (max-width: 576px) {
+  .inicio .pictures {
+    position: relative;
+    width: 100%;
+    height: 320px; }
+    .inicio .pictures .pictures__torta1 {
+      position: absolute;
+      z-index: 1;
+      left: 4%; }
+    .inicio .pictures .pictures__torta2 {
+      position: absolute;
+      z-index: 2;
+      top: 30%; }
+    .inicio .pictures img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%; } }
+
+@media screen and (max-width: 768px) {
+  .pictures .pictures__torta1 {
+    position: absolute;
+    z-index: 1;
+    left: 4%; }
+  .pictures .pictures__torta2 {
+    position: absolute;
+    z-index: 2;
+    top: 30%; } }
+
+@media screen and (max-width: 1200px) {
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%; }
+    .inicio .inicio__descripcion {
+      text-align: center;
+      margin: 20px 50px;
+      width: 95%; }
+  .row {
+    justify-content: space-evenly; }
+  .col {
+    flex: 0 0 0%; } }
+
+/* NOSOTROS */
+.nosotros .nosotros__titulo h1 {
+  color: #ff7ebc;
+  font-size: 4.8em;
+  font-family: 'Arima Madurai', cursive;
+  text-align: center;
+  height: 60px; }
+
+.nosotros__descripcion {
+  font-family: 'Arima Madurai', cursive;
+  font-size: 1.7em;
+  text-align: center;
+  line-height: 40px;
+  margin: 40px 70px; }
+
+.nosotros__picture {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px; }
+  .nosotros__picture img {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%; }
+
+.nosotros__agradecimiento p {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  font-family: 'Arima Madurai', cursive;
+  color: #ff7ebc;
+  font-weight: 800;
+  font-size: 3em;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center; }
+
+.picture__fija {
+  height: 480px;
+  text-align: center;
+  background-image: url(../img/nosotros4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+/* MEDIAS */
+@media screen and (max-width: 576px) {
+  .nosotros__titulo h1 {
+    font-size: 3.6em;
+    height: 100%; }
+  .nosotros__descripcion {
+    margin: 20px; }
+  .nosotros__agradecimiento p {
+    font-size: 2.2em;
+    line-height: 50px;
+    width: 80%; } }
+
+@media screen and (max-width: 768px) {
+  .nosotros__picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%; }
+    .nosotros__picture img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin: auto; } }
+
+/* TIENDA */
+.titulo__tienda {
+  margin-top: 80px;
+  height: 80px;
+  width: 100%;
+  background-color: #ffddec;
+  display: grid;
+  align-items: center; }
+  .titulo__tienda h1 {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 3em;
+    color: #ff7ebc;
+    text-align: center;
+    font-weight: 600;
+    margin: 0; }
+
+.hamburguer__menu {
+  display: none; }
+
+.search {
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  .search .search__form {
+    position: relative; }
+    .search .search__form .search__producto {
+      height: 34px;
+      width: 280px;
+      right: 180px;
+      opacity: .6;
+      border-radius: 18px;
+      border-color: rgba(0, 0, 0, 0.185);
+      outline: none;
+      padding: 0 10px;
+      font-size: 1.2em; }
+    .search .search__form .search__button {
+      position: absolute;
+      top: 9px;
+      right: 16px;
+      width: 15px;
+      border: none;
+      opacity: .5; }
+
+.container__shop {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .container__shop .categoria {
+    margin-right: 70px; }
+    .container__shop .categoria .categoria__titulo {
+      font-size: 1.7em;
+      color: #ff00aa;
+      margin-bottom: 16px; }
+    .container__shop .categoria .categoria__link {
+      margin-bottom: 30px; }
+      .container__shop .categoria .categoria__link a {
+        font-size: 1.2em;
+        color: #9a9a9a; }
+      .container__shop .categoria .categoria__link li {
+        margin-top: 15px;
+        margin-bottom: 15px; }
+      .container__shop .categoria .categoria__link ul {
+        padding: 0px; }
+  .container__shop .galeria {
+    width: 100%; }
+    .container__shop .galeria .shop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+      .container__shop .galeria .shop .shop__galeria {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 10px; }
+        .container__shop .galeria .shop .shop__galeria .shop__producto {
+          position: relative;
+          margin-bottom: 20px;
+          transition: transform 1s; }
+          .container__shop .galeria .shop .shop__galeria .shop__producto:hover {
+            transform: scale(1.1); }
+          .container__shop .galeria .shop .shop__galeria .shop__producto .shop__picture {
+            margin: 10px; }
+            .container__shop .galeria .shop .shop__galeria .shop__producto .shop__picture img {
+              width: 233px;
+              height: 300px;
+              border-radius: 15%; }
+          .container__shop .galeria .shop .shop__galeria .shop__producto .shop__descripcion a {
+            position: absolute;
+            bottom: 10%;
+            width: 250px;
+            color: #000000;
+            font-family: 'Arima Madurai', cursive;
+            text-align: center; }
+
+/* MEDIAS */
+@media screen and (max-width: 576px) {
+  .container__shop {
+    max-width: 1200px;
+    margin: 0 20px; } }
+
+@media screen and (max-width: 768px) {
+  .search .search__form .search__producto {
+    height: 34px;
+    width: 220px;
+    right: 120px; }
+  .hamburguer__menu {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 0;
+    margin: 20px; }
+    .hamburguer__menu a {
+      width: 28px;
+      height: 25px; }
+    .hamburguer__menu span {
+      font-size: 1.7em;
+      padding-left: 20px; }
+  .search {
+    display: none; }
+  .search__form {
+    position: relative;
+    margin-bottom: 35px; }
+    .search__form .search__producto {
+      height: 30px;
+      width: 240px;
+      opacity: .6;
+      border-radius: 18px;
+      border-color: rgba(0, 0, 0, 0.185);
+      outline: none;
+      padding: 0 10px;
+      font-size: 1em; }
+    .search__form .search__button {
+      position: absolute;
+      top: 7px;
+      right: 50px;
+      width: 15px;
+      border: none;
+      opacity: .6; }
+  .categoria {
+    display: none; }
+  .categoria__hamburguer {
+    margin: 5px; }
+    .categoria__hamburguer .categoria__titulo {
+      font-size: 1.2em;
+      color: #ff00aa;
+      margin-bottom: 8px; }
+    .categoria__hamburguer .categoria__link {
+      margin-bottom: 20px; }
+      .categoria__hamburguer .categoria__link a {
+        font-size: 1em;
+        color: #9a9a9a; }
+      .categoria__hamburguer .categoria__link li {
+        margin-top: 5px;
+        margin-bottom: 5px; }
+      .categoria__hamburguer .categoria__link ul {
+        padding: 0px; } }
+
+@media screen and (max-width: 1200px) {
+  .galeria {
+    width: 100%; }
+    .galeria .shop .shop__galeria .shop__producto .shop__picture img {
+      width: 233px;
+      border-radius: 15%; }
+  .row {
+    justify-content: space-evenly; }
+  .col {
+    flex: 0 0 0%; } }
+
+/* CATERING */
+.titulo__catering {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 60px;
+  font-family: 'Arima Madurai', cursive;
+  color: #ff7ebc;
+  text-align: center; }
+  .titulo__catering h1 {
+    font-size: 3.6em;
+    font-weight: 600; }
+  .titulo__catering h2 {
+    font-size: 3em;
+    font-weight: 400; }
+
+.catering {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 55px; }
+  .catering .catering__descripcion {
+    font-size: 1.7em;
+    text-align: left;
+    line-height: 28px;
+    margin-right: 10px; }
+    .catering .catering__descripcion ul li {
+      list-style-type: circle;
+      text-align: left;
+      line-height: 40px;
+      margin-left: 50px; }
+  .catering .catering__picture {
+    width: 680px;
+    display: grid;
+    align-content: center;
+    gap: 1rem;
+    align-items: center;
+    grid-template-columns: 165px 160px 160px 165px;
+    grid-template-rows: 130px 190px; }
+    .catering .catering__picture .catering__img:nth-of-type(1) {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column: 1; }
+    .catering .catering__picture .catering__img:nth-of-type(2) {
+      grid-column-start: 2;
+      grid-column-end: 3; }
+    .catering .catering__picture .catering__img:nth-of-type(3) {
+      grid-column: 3 / 4; }
+    .catering .catering__picture .catering__img:nth-of-type(4) {
+      grid-row: 2;
+      grid-column-start: 2;
+      grid-column-end: 4; }
+    .catering .catering__picture .catering__img:nth-of-type(5) {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column: 4; }
+
+.catering__contacto {
+  margin: 40px 50px;
+  font-size: 1.7em;
+  text-align: center;
+  line-height: 35px; }
+
+.formulario__titulo h3 {
+  color: #ff7ebc;
+  font-family: 'Arima Madurai', cursive;
+  text-align: center;
+  font-size: 2.2em;
+  margin: 50px 0; }
+
+.formulario__content {
+  width: 320px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto; }
+  .formulario__content ul {
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto; }
+  .formulario__content li {
+    display: flex;
+    flex-direction: column; }
+    .formulario__content li .formulario__items {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    .formulario__content li .formulario__text {
+      font-family: 'Nunito', sans-serif;
+      height: 34px;
+      width: 320px;
+      right: 180px;
+      border: 1.8px solid #ffddec;
+      border-radius: 18px;
+      outline: none;
+      margin-bottom: 25px;
+      padding: 0 8px; }
+
+.formulario__contacto {
+  width: 850px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto; }
+  .formulario__contacto li {
+    display: flex;
+    flex-direction: column; }
+    .formulario__contacto li .formulario__items {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    .formulario__contacto li .formulario__text {
+      font-family: 'Nunito', sans-serif;
+      height: 34px;
+      width: 320px;
+      right: 180px;
+      border: 1.8px solid #ffddec;
+      border-radius: 18px;
+      outline: none;
+      margin-bottom: 25px;
+      padding: 0 8px; }
+    .formulario__contacto li .formulario__coment {
+      font-family: 'Nunito', sans-serif;
+      height: 60px;
+      width: 440px;
+      right: 180px;
+      opacity: .6;
+      border: 1.8px solid #ffddec;
+      border-radius: 18px;
+      outline: none;
+      margin-bottom: 25px;
+      padding: 8px 8px;
+      height: 220px; }
+
+.button {
+  text-align: center;
+  margin-bottom: 100px; }
+  .button .button_enviar {
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    background-color: #ff00aa;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fdfdfd;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    border: none; }
+
+/* MEDIAS */
+@media screen and (max-width: 576px) {
+  .container__shop {
+    max-width: 1200px;
+    margin: 0 20px; } }
+
+@media screen and (max-width: 768px) {
+  .catering {
+    margin-top: 20px; }
+    .catering .catering__descripcion {
+      margin: 15px; }
+    .catering .catering__picture {
+      width: auto;
+      grid-template-columns: 150px 150px;
+      grid-template-rows: 118px 180px; }
+      .catering .catering__picture .catering__img:nth-of-type(1) {
+        grid-row: 1 / 3;
+        grid-column: 1; }
+      .catering .catering__picture .catering__img:nth-of-type(2) {
+        grid-column: 1 / 2; }
+      .catering .catering__picture .catering__img:nth-of-type(3) {
+        grid-column: 2 / 3; }
+      .catering .catering__picture .catering__img:nth-of-type(4) {
+        grid-row: 4;
+        grid-column: 1 / 3; }
+      .catering .catering__picture .catering__img:nth-of-type(5) {
+        grid-row: 1 / 3;
+        grid-column: 2; }
+  .formulario__content {
+    height: 200px; }
+    .formulario__content ul {
+      flex-direction: column;
+      width: 100%; }
+  .formulario__contacto {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center; }
+  .formulario__contacto li .formulario__coment {
+    height: 270px;
+    width: 320px; }
+  .button {
+    margin-bottom: 70px; } }
+
+@media screen and (max-width: 1200px) {
+  .catering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px; }
+    .catering .catering__picture {
+      height: 100%; } }
+
+/* CONTACTO */
+.container__contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .container__contacto .contacto__sucursales1 {
+    width: 500px; }
+    .container__contacto .contacto__sucursales1 .contacto__titulo {
+      height: 60px;
+      color: #ff7ebc;
+      font-family: 'Arima Madurai', cursive;
+      text-align: center;
+      font-size: 3em;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 80px;
+      margin-bottom: 50px; }
+    .container__contacto .contacto__sucursales1 .sucursales__contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      width: 80%;
+      margin: 30px 0; }
+      .container__contacto .contacto__sucursales1 .sucursales__contacto .sucursales__items {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin-bottom: 15px; }
+        .container__contacto .contacto__sucursales1 .sucursales__contacto .sucursales__items .sucursales__logo {
+          width: 34px;
+          margin-right: 20px;
+          opacity: .4;
+          display: grid;
+          align-items: center; }
+        .container__contacto .contacto__sucursales1 .sucursales__contacto .sucursales__items .sucursales__tittle {
+          font-family: 'Arima Madurai', cursive;
+          color: #ff00aa;
+          font-size: 1.2em;
+          line-height: 20px;
+          margin: auto 0; }
+        .container__contacto .contacto__sucursales1 .sucursales__contacto .sucursales__items .sucursales__text {
+          font-size: 1.2em;
+          line-height: 20px;
+          margin: auto 0; }
+  .container__contacto .contacto__sucursales2 {
+    width: 600px; }
+    .container__contacto .contacto__sucursales2 .contacto__titulo {
+      height: 60px;
+      color: #ff7ebc;
+      font-family: 'Arima Madurai', cursive;
+      text-align: center;
+      font-size: 2.2em;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 80px;
+      margin-bottom: 50px; }
+    .container__contacto .contacto__sucursales2 .formulario__contactanos {
+      width: 600px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between; }
+      .container__contacto .contacto__sucursales2 .formulario__contactanos .formulario__contactanos2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 570px; }
+        .container__contacto .contacto__sucursales2 .formulario__contactanos .formulario__contactanos2 li {
+          display: flex;
+          flex-direction: column; }
+          .container__contacto .contacto__sucursales2 .formulario__contactanos .formulario__contactanos2 li .formulario__items {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.2em;
+            margin-bottom: 10px; }
+          .container__contacto .contacto__sucursales2 .formulario__contactanos .formulario__contactanos2 li .formulario__input {
+            height: 36px;
+            width: 250px;
+            opacity: 0.6;
+            border: 1.7px solid #ffddec;
+            border-radius: 18px;
+            outline: none;
+            margin-bottom: 50px;
+            padding: 0 8px; }
+          .container__contacto .contacto__sucursales2 .formulario__contactanos .formulario__contactanos2 li .formulario__comentario {
+            height: 200px;
+            width: 570px;
+            opacity: .9;
+            border: 1.7px solid #ffddec;
+            border-radius: 18px;
+            outline: none;
+            margin-bottom: 25px;
+            padding: 8px 8px; }
+
+hr {
+  height: 0.5px;
+  background-color: #ff00aa;
+  width: 310px;
+  margin-left: 10px;
+  border: none; }
+
+.button__contact {
+  text-align: center;
+  margin: 20px; }
+  .button__contact .button_enviar {
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    background-color: #ff00aa;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fdfdfd;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    border: none; }
+
+/* MEDIAS */
+@media screen and (max-width: 576px) {
+  .container__shop {
+    max-width: 1200px;
+    margin: 0 20px; } }
+
+@media screen and (max-width: 768px) {
+  .contacto__sucursales1 .sucursales__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto; }
+  .container__contacto .contacto__sucursales2 .formulario__contactanos .formulario__contactanos2 {
+    width: 100%;
+    align-items: center;
+    flex-direction: column; }
+    .container__contacto .contacto__sucursales2 .formulario__contactanos .formulario__contactanos2 li .formulario__comentario {
+      width: 250px;
+      height: 400px; } }
+
+@media screen and (max-width: 1200px) {
+  .container__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container__contacto .contacto__sucursales1 {
+      width: 100%; }
+      .container__contacto .contacto__sucursales1 .contacto__titulo {
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 20px; }
+      .container__contacto .contacto__sucursales1 .sucursales__contacto {
+        align-items: center; }
+    .container__contacto .contacto__sucursales2 {
+      width: 100%; }
+      .container__contacto .contacto__sucursales2 .contacto__titulo {
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 40px; }
+      .container__contacto .contacto__sucursales2 .formulario__contactanos {
+        width: 100%;
+        align-items: center; }
+  .sucursales__column {
+    display: flex;
+    flex-direction: row; }
+  hr {
+    display: none; } }

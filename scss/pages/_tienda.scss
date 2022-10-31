@@ -1,0 +1,278 @@
+/* TIENDA */
+
+.titulo__tienda {
+margin-top: 80px;
+height: 80px;
+width: 100%;
+background-color: $secondary;
+display: grid;
+align-items: center;
+
+    h1 {
+    font-family: 'Arima Madurai', cursive;
+    font-size: $text-lg;
+    color: $primary;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    }
+}
+
+.hamburguer__menu {
+display: none;
+}
+
+.search {
+height: 140px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content:space-between;
+
+    
+    .search__form {
+    position: relative;
+    
+        .search__producto {
+        height: 34px;
+        width: 280px;
+        right: 180px;
+        opacity: .6;
+        border-radius: 18px;
+        border-color: rgba(0, 0, 0, 0.185);
+        outline: none;
+        padding: 0 10px;
+        font-size: $text-xs;
+        }
+        
+        .search__button {
+        position: absolute;
+        top: 9px;
+        right: 16px;
+        width: 15px;
+        border: none;
+        opacity: .5;
+        }
+    }
+}
+
+
+.container__shop {
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+    .categoria {
+    margin-right: 70px;
+
+        .categoria__titulo {
+        font-size: $text-sm;
+        color: $accent;
+        margin-bottom: 16px;
+        }
+
+        .categoria__link {
+        margin-bottom: 30px;
+            
+            a {
+            font-size: $text-xs;
+            color: #9a9a9a;
+            }
+
+            li {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            }
+
+            ul {
+            padding: 0px;
+            }
+        }
+    }
+    
+    .galeria {
+    width: 100%;
+        
+        .shop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+            .shop__galeria {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 10px;
+                
+                .shop__producto {
+                position: relative;
+                margin-bottom: 20px;
+                transition: transform 1s; 
+
+                    &:hover {
+                    transform: scale(1.1); 
+                    }
+
+                    .shop__picture {
+                    margin: 10px;
+
+                        img {
+                        width: 233px;
+                        height: 300px;
+                        border-radius: 15%;
+                        }
+                    }
+
+                    .shop__descripcion a {
+                    position: absolute;
+                    bottom: 10%;
+                    width: 250px;
+                    color: $basic;
+                    font-family: 'Arima Madurai', cursive;
+                    text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MEDIAS */
+
+@media screen and (max-width: 576px) { 
+
+    .container__shop {
+    max-width: 1200px;
+    margin: 0 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) { 
+
+    .search {
+
+        .search__form {
+
+            .search__producto {
+            height: 34px;
+            width: 220px;
+            right: 120px;
+            }
+        }
+    }
+
+    .hamburguer__menu {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 0;
+    margin: 20px;
+        
+        a {
+        width: 28px;
+        height: 25px;
+        }
+
+        span {
+        font-size: $text-sm;
+        padding-left: 20px;
+        }
+    }
+
+    .search {
+    display: none;
+    }
+
+    .search__form {
+    position: relative;
+    margin-bottom: 35px;
+
+        .search__producto {
+        height: 30px;
+        width: 240px;
+        opacity: .6;
+        border-radius: 18px;
+        border-color: rgba(0, 0, 0, 0.185);
+        outline: none;
+        padding: 0 10px;
+        font-size: $text-xxs;
+        }
+        
+        .search__button {
+        position: absolute;
+        top: 7px;
+        right: 50px;
+        width: 15px;
+        border: none;
+        opacity: .6;
+        }
+    }
+
+    .categoria {
+    display: none;
+    }
+
+
+    .categoria__hamburguer {
+    margin: 5px;
+
+        .categoria__titulo {
+        font-size: $text-xs;
+        color: $accent;
+        margin-bottom: 8px;
+        }
+
+        .categoria__link {
+        margin-bottom: 20px;
+            
+            a {
+            font-size: $text-xxs;
+            color: #9a9a9a;
+            }
+
+            li {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            }
+
+            ul {
+            padding: 0px;
+            }
+        }
+    }
+}
+    
+
+@media screen and (max-width: 1200px) {
+
+    .galeria {
+    width: 100%;
+        
+        .shop {
+
+            .shop__galeria {
+                
+                .shop__producto {
+
+                    .shop__picture img {
+                    width: 233px;
+                    border-radius: 15%;
+                    }
+                }
+            }
+        }
+    }
+
+    .row {
+    justify-content: space-evenly;
+    }
+
+    .col {
+    flex: 0 0 0%;
+    }
+}
+

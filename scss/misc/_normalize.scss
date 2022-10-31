@@ -1,0 +1,52 @@
+/* NORMALIZE */
+
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+  .container {
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ::placeholder {
+    font-family: 'Nunito', sans-serif;
+    font-size: $text-xxs;
+    text-align: left;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  option {
+    font-family: 'Nunito', sans-serif;
+    font-size: $text-xxs;
+  }
+  
+  .salto__linea img {
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  textarea {
+    resize: none;
+  }

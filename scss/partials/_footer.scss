@@ -1,0 +1,178 @@
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: 100%;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pie {
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+background-image: url(../img/piefondo.svg);
+background-position: center;
+background-size: cover;
+
+  .pie__redes {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+
+    .pie__titulo {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+      h2 {
+      text-align: center;
+      font-size: $text-md;
+      color: $accent;
+      }
+    }
+
+    .pie__logos {
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+
+      .redes__logo {
+      display: flex;
+      justify-content: space-around;
+      padding: 8px;
+
+        img {
+        height: 40px;
+        }
+      }
+    }
+  }
+
+  .pie__contacto {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+
+    .pie__titulo {
+      margin-top: 10px;
+      margin-bottom: 5px;
+ 
+      h2 {
+      text-align: center;
+      font-size: $text-md;
+      color: $accent;
+      }
+    }
+
+    .sucursales {
+      height: 140px;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-evenly;
+      align-content: flex-start;
+
+      h4 {
+      padding: 5px 0 5px 0;
+      text-align:center;
+      font-size: $text-xxs;
+      text-align:left;
+      }
+    
+      h3 {
+      padding: 8px 0 8px 0;
+      text-align:center;
+      font-size: $text-xs;
+      text-align:left;
+      font-weight: bolder;
+      }
+    
+      span img {
+      vertical-align: middle;
+      height: 20px;
+      width: 30px;
+      }
+    }
+  }
+}
+
+
+.copyright {
+background-color: $basic;
+
+  .text_copyright {
+  padding: 10px 0 10px 0;
+  text-align:center;
+  color: $light;
+  font-size: $text-xxs;
+  margin: auto;
+  }
+}
+
+
+
+/* MEDIAS */
+
+@media screen and (max-width: 576px) { 
+
+  .pie {
+
+    .pie__contacto {
+    height: 100%;
+    margin-top: 10px;
+
+      .sucursales {
+      height: 100%;
+      flex-direction: column;
+  
+        h4 {
+        text-align:center;
+        }
+      
+        h3 {
+        text-align:center;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) { 
+
+  .pie {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url(../img/piefondo.svg);
+    background-position: center;
+    background-size: cover;
+
+    .pie__redes {
+      width: 100%;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 15px auto;
+    }
+  }
+}

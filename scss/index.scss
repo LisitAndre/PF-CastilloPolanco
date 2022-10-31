@@ -1,0 +1,22 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;800;900&family=Nunito:wght@400;500;600&display=swap');
+
+/* MISC */
+
+@import './misc/variables';
+@import './misc/normalize';
+
+
+/* PARTIALS */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* PAGES */
+
+@import './pages/index';
+@import './pages/nosotros';
+@import './pages/tienda';
+@import './pages/catering';
+@import './pages/contacto';

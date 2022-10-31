@@ -1,0 +1,195 @@
+/* INICIO */
+
+.inicio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 380px;
+
+  .inicio__descripcion {
+    font-family: 'Arima Madurai', cursive;
+    font-size: $text-lg;
+    line-height: 60px;
+    text-align: center;
+    margin: 40px 20px;
+    width: 50%;
+  }
+  
+  .pictures {
+  position: relative;
+  width: 600px;
+  height: 400px;
+        
+    .pictures__torta1 {
+    position: absolute;
+    z-index: 1;
+    right: 45%;
+    }
+
+        
+    .pictures__torta2 {
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    right: 5%;
+    }
+
+    img {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    }
+  }
+}
+  
+
+.tienda {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px 0;
+
+  .tienda__galeria {
+  display: flex;
+  flex-direction: row;
+  }
+}
+  
+
+  
+.producto {
+  position: relative;
+  padding: 20px;
+  width: auto; 
+
+  &:hover {
+  transform: scale(1.1); 
+  } 
+
+  .producto__picture img {
+  width: 260px;
+  height: 330px;
+  border-radius: 15%;
+  }
+
+  .producto__descripcion__arg a {
+  position: absolute;
+  bottom: 13%;
+  width: 260px;
+  color: $light;
+  font-size: $text-sm;
+  font-family: 'Arima Madurai', cursive;
+  text-align: center;
+  }
+  
+  .producto__descripcion__vzla a {
+  position: absolute;
+  bottom: 13%;
+  width: 260px;
+  color: $basic;
+  font-size: $text-sm;
+  font-family: 'Arima Madurai', cursive;
+  text-align: center;
+  }
+}
+
+.tienda__enlace {
+  display: grid;
+  align-items: center;
+  width: 290px;
+  height: 40px;
+  background: linear-gradient(0.90turn, #fbcbe6, #ff7ebc, #fd2ea3);
+  border-radius: 20px;
+  margin: 30px;
+
+  a {
+  color: $light;
+  font-size: $text-sm;
+  text-align: center;
+  width: 100%;
+  }
+
+  .bandera {
+  margin: 10px;
+
+    img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    }
+  }  
+}
+
+
+/* MEDIAS */
+
+@media screen and (max-width: 576px) { 
+
+  .inicio {
+    
+    .pictures {
+    position: relative;
+    width: 100%;
+    height: 320px;
+
+      .pictures__torta1 {
+      position: absolute;
+      z-index: 1;
+      left: 4%;
+      }
+      
+      .pictures__torta2 {
+      position: absolute;
+      z-index: 2;
+      top: 30%;
+      }
+
+      img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) { 
+    
+  .pictures .pictures__torta1 {
+  position: absolute;
+  z-index: 1;
+  left: 4%;
+  }
+
+  .pictures .pictures__torta2 {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  }
+}
+    
+
+@media screen and (max-width: 1200px) {
+
+  .inicio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+    .inicio__descripcion {
+    text-align: center;
+    margin: 20px 50px;
+    width: 95%;
+    }
+  }
+
+  .row {
+  justify-content: space-evenly;
+  }
+
+  .col {
+  flex: 0 0 0%;
+  }
+}

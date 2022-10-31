@@ -1,0 +1,98 @@
+/* NOSOTROS */
+
+.nosotros {
+
+  .nosotros__titulo h1 {
+  color: $primary;
+  font-size: $text-xxl;
+  font-family: 'Arima Madurai', cursive;
+  text-align: center;
+  height: 60px;
+  }
+}
+
+.nosotros__descripcion {
+font-family: 'Arima Madurai', cursive;
+font-size: $text-sm;
+text-align: center;
+line-height: 40px;
+margin: 40px 70px;
+}
+
+.nosotros__picture {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+height: 300px;
+
+  img {
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  }
+}
+
+.nosotros__agradecimiento p {
+margin: auto;
+text-align: center;
+width: 60%;
+font-family: 'Arima Madurai', cursive;
+color: $primary;
+font-weight: 800;
+font-size: $text-lg;
+line-height: 60px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+.picture__fija {
+height: 480px;
+text-align: center;
+background-image: url(../img/nosotros4.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+
+/* MEDIAS */
+
+@media screen and (max-width: 576px) { 
+
+  .nosotros__titulo h1 {
+  font-size: $text-xl;
+  height: 100%;
+  }
+
+  .nosotros__descripcion {
+  margin: 20px;
+  }
+
+  .nosotros__agradecimiento p {
+  font-size: $text-md;
+  line-height: 50px;
+  width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 768px) { 
+
+  .nosotros__picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+
+    img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: auto;
+    }
+  }
+}
