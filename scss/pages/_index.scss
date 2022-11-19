@@ -43,7 +43,6 @@
   }
 }
   
-
 .tienda {
 display: flex;
 flex-direction: column;
@@ -55,8 +54,6 @@ padding: 20px 0;
   flex-direction: row;
   }
 }
-  
-
   
 .producto {
   position: relative;
@@ -127,7 +124,7 @@ padding: 20px 0;
 @media screen and (max-width: 576px) { 
 
   .inicio {
-    
+
     .pictures {
     position: relative;
     width: 100%;
@@ -167,6 +164,13 @@ padding: 20px 0;
   z-index: 2;
   top: 30%;
   }
+
+  .tienda {
+    
+      .tienda__galeria {
+      width: 90%;
+      }
+    }
 }
     
 

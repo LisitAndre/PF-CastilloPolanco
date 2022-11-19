@@ -49,6 +49,7 @@ text-align: center;
 
 .picture__fija {
 height: 480px;
+margin: 40px 0;
 text-align: center;
 background-image: url(../img/nosotros4.jpg);
 background-position: center;
@@ -61,9 +62,12 @@ background-attachment: fixed;
 
 @media screen and (max-width: 576px) { 
 
-  .nosotros__titulo h1 {
-  font-size: $text-xl;
-  height: 100%;
+  .nosotros {
+
+    .nosotros__titulo h1 {
+    font-size: $text-xl;
+    height: 100%;
+    }
   }
 
   .nosotros__descripcion {

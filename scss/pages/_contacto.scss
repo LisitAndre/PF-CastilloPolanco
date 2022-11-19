@@ -90,6 +90,10 @@
       justify-content: space-between;
       width: 570px;
 
+        ul {
+          padding-left: 0;
+        }
+
         li {
         display: flex;
         flex-direction: column;
@@ -220,7 +224,7 @@ margin: 20px;
 
             .formulario__comentario {
               width: 250px;
-              height: 400px;
+              height: 350px;
             }
           }
         }
