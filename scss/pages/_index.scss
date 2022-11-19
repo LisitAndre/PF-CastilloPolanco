@@ -119,35 +119,29 @@ padding: 20px 0;
 }
 
 
-/* MEDIAS */
+/* MEDIAS */    
 
-@media screen and (max-width: 576px) { 
+@media screen and (max-width: 1200px) {
 
   .inicio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 
-    .pictures {
-    position: relative;
-    width: 100%;
-    height: 320px;
-
-      .pictures__torta1 {
-      position: absolute;
-      z-index: 1;
-      left: 4%;
-      }
-      
-      .pictures__torta2 {
-      position: absolute;
-      z-index: 2;
-      top: 30%;
-      }
-
-      img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      }
+    .inicio__descripcion {
+    text-align: center;
+    margin: 20px 50px;
+    width: 95%;
     }
+  }
+
+  .row {
+  justify-content: space-evenly;
+  }
+
+  .col {
+  flex: 0 0 0%;
   }
 }
 
@@ -172,28 +166,39 @@ padding: 20px 0;
       }
     }
 }
-    
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 576px) { 
 
   .inicio {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
 
     .inicio__descripcion {
-    text-align: center;
-    margin: 20px 50px;
-    width: 95%;
+    font-size: $text-md;
+    line-height: 50px;
+    width: 80%;
     }
-  }
 
-  .row {
-  justify-content: space-evenly;
-  }
+    .pictures {
+    position: relative;
+    width: 100%;
+    height: 320px;
 
-  .col {
-  flex: 0 0 0%;
+      .pictures__torta1 {
+      position: absolute;
+      z-index: 1;
+      left: 4%;
+      }
+      
+      .pictures__torta2 {
+      position: absolute;
+      z-index: 2;
+      top: 30%;
+      }
+
+      img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      }
+    }
   }
 }

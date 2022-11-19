@@ -13,12 +13,15 @@
     color: $primary;
     font-family: 'Arima Madurai', cursive;
     text-align: center;
-    font-size: $text-lg;
     display: flex;
     align-items:center;
     justify-content: flex-start;
     margin-top: 80px;
     margin-bottom: 50px;
+
+      h1 {
+        font-size: $text-lg;
+      }
     }
 
     .sucursales__contacto {
@@ -68,12 +71,15 @@
     color: $primary;
     font-family: 'Arima Madurai', cursive;
     text-align: center;
-    font-size: $text-md;
     display: flex;
     align-items:center;
     justify-content: flex-start;
     margin-top: 80px;
     margin-bottom: 50px;
+
+      h1 {
+      font-size: $text-lg;
+      }
     }
 
     .formulario__contactanos {
@@ -164,76 +170,6 @@ margin: 20px;
 
 /* MEDIAS */
 
-@media screen and (max-width: 576px) { 
-
-  .container__shop {
-  max-width: 1200px;
-  margin: 0 20px;
-  }
-
-  .container__contacto {
-    .contacto__sucursales1 {
-      .sucursales__contacto {
-        .sucursales__items {
-          .sucursales__logo {
-          width: 24px;
-          }
-        }
-      }
-    }
-  }
-
-  .container__contacto {  
-    .contacto__sucursales2 { 
-      .formulario__contactanos { 
-        .formulario__contactanos2 li { 
-          .formulario__input { 
-          margin-bottom: 30px;
-          }
-        }
-      }  
-    } 
-  }  
-}
-
-@media screen and (max-width: 768px) { 
-
-  .contacto__sucursales1 {
-
-    .sucursales__column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    }
-  }
-
-  .container__contacto {
-
-    .contacto__sucursales2 {
-
-      .formulario__contactanos { 
-
-        .formulario__contactanos2 {
-
-        width: 100%;
-        align-items: center;
-        flex-direction: column;
-
-          li {
-
-            .formulario__comentario {
-              width: 250px;
-              height: 350px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-  
-
 @media screen and (max-width: 1200px) {
 
   .container__contacto {
@@ -280,5 +216,81 @@ margin: 20px;
   hr {
   display: none;
   }
+}
+
+@media screen and (max-width: 768px) { 
+
+  .container__contacto {
+
+    .contacto__sucursales1 {
+
+      .sucursales__column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      }
+
+      .sucursales__contacto {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  .container__contacto {
+
+    .contacto__sucursales2 {
+
+      .formulario__contactanos { 
+
+        .formulario__contactanos2 {
+
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+
+          li {
+
+            .formulario__comentario {
+              width: 250px;
+              height: 350px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+  
+@media screen and (max-width: 576px) { 
+
+  .container__shop {
+  max-width: 1200px;
+  margin: 0 20px;
+  }
+
+  .container__contacto {
+    .contacto__sucursales1 {
+      .sucursales__contacto {
+        .sucursales__items {
+          .sucursales__logo {
+          width: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .container__contacto {  
+    .contacto__sucursales2 { 
+      .formulario__contactanos { 
+        .formulario__contactanos2 li { 
+          .formulario__input { 
+          margin-bottom: 30px;
+          }
+        }
+      }  
+    } 
+  }  
 }
 
